@@ -7,16 +7,14 @@
     <link
       rel="shortcut icon"
       href="./assets/green-earth-2.png"
-      type="image/x-icon"
-    />
+      type="image/x-icon"/>
     
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
       integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
       crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
+      referrerpolicy="no-referrer"/>
     
     <link rel="stylesheet" href="styles.css"/>
 
@@ -24,11 +22,94 @@
     <link
       href="https://cdn.jsdelivr.net/npm/daisyui@5"
       rel="stylesheet"
-      type="text/css"
-    />
+      type="text/css"/>
+
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
   </head>
-  <body>
+  <body class="inter-font bg-[#f0fdf4]">
+    
+    <header class="bg-[#15803D]">
+
+      <!--Navbar Design -->
+
+      <section
+        class="navbar h-20 bg-[#15803D] text-white w-11/12 mx-auto">
+        <div class="navbar-start">
+          <div class="dropdown">
+            <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-5 w-5"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor">
+
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h8m-8 6h16"/>
+              </svg>
+            </div>
+            <ul
+              tabindex="0"
+              class="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-1 shadow bg-[#15803D]">
+
+              <li><a href="#campaign-container">About</a></li>
+              <li><a href="#gallery-container">Gallery</a></li>
+              <li><a href="#plant-tree-container">Plant A Tree</a></li>
+
+            </ul>
+          </div>
+          <a
+            class="text-2xl font-bold btn btn-ghost hover:bg-[#15803D] hover:border-none hover:shadow-none hover:text-white"
+            >Green Earth</a>
+        </div>
+
+        <div class="navbar-center hidden lg:flex">
+          <ul class="menu menu-horizontal px-1">
+            <li><a href="#campaign-container">About</a></li>
+            <li><a href="#gallery-container">Gallery</a></li>
+            <li><a href="#plant-tree-container">Plant A Tree</a></li>
+          </ul>
+        </div>
+
+        <div class="navbar-end">
+          <a class="btn rounded-full text-[#15803D] bg-[#ebd241] font-bold border-none hover:text-white"
+            >Plant a Tree</a>
+        </div>
+
+      </section>
+
+      <!--Hero Section Design-->
+
+      <section
+        class="hero bg-[#CFF0DC] h-[75vh] sm:h-[380px] w-full [background-position:left,right] [background-image:url('./assets/hero-leaf1.png')] sm:[background-image:url('./assets/hero-leaf1.png'),url('./assets/hero-leaf2.png')] sm:[background-position:left_center,right_center] sm:[background-size:contain,contain] bg-no-repeat flex flex-col justify-items-start items-center pt-30 sm:pt-0 sm:justify-center">
+
+        <div class="text-center space-y-4">
+
+          <h1
+            class="font-bold text-4xl sm:text-5xl text-shadow-lg">
+            Plant a Tree, Grow a Future
+          </h1>
+          <p
+            class="px-5 text-shadow-sm font-semibold text-[#1f2937]">
+            Join our mission to plant 1 million trees and make the Earth greener
+            for future <br />generations.
+          </p>
+          <button
+            class="btn rounded-full text-[#15803D] bg-[#ebd241] font-bold h-12 px-6 hover:text-white">
+            Get Involved
+          </button>
+        </div>
+      </section>
+    </header>
+
+
+
+
+
     <script src="scripts.js"></script>
   </body>
   </html>
