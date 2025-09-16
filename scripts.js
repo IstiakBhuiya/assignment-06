@@ -116,7 +116,7 @@ const displayCatagoryPlant = (trees) => {
   manageSpinner(false);
 };
 
-// Display Style
+// Ctagories--------------------------------------------------------------------------display
 const displayCatagories = (catagories) => {
   //  1. get the container and Empty
   const catagoriesContainer = document.getElementById("catagories-container");
@@ -132,11 +132,12 @@ const displayCatagories = (catagories) => {
     </button>
     
     `;
-    // 4. append into container
+    //      4. append into container
     catagoriesContainer.append(btnDiv);
   }
 };
-//Cart Function
+// Add to Cart Function-----------------------------------------------------------------------------
+let cart = [];
 let total = 0;
 const addToCart = (tree) => {
   const existingItem = cart.find((item) => item.id === tree.id);
@@ -148,13 +149,13 @@ const addToCart = (tree) => {
     cartItemElement.querySelector(".quantity").innerText =
       existingItem.quantity;
     cartItemElement.querySelector(".item-price").innerText =
-      tree.price * existingItem.quantity;
+      tree.price;
   } else {
     const cartItem = { ...tree, quantity: 1 };
     cart.push(cartItem);
-  
+    //=====================
 
-    // cart item
+    // create cart item
     const cartBox = document.createElement("div");
     cartBox.id = `cart-item-${tree.id}`;
     cartBox.classList =
@@ -186,7 +187,7 @@ const calculateTotal = () => {
   document.getElementById("cart-total").innerText = total;
 };
 
-// All Plants button 
+// All Trees button click
 document.getElementById("all-plants-btn").addEventListener("click", () => {
   removeActive();
   document.getElementById("all-plants-btn").classList.add("active");
